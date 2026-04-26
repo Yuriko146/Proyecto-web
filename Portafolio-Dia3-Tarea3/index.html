@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Leonardo Limachi – Desarrollador Web</title>
+  <meta name="description" content="Portafolio de Leonardo Limachi, desarrollador web full stack." />
+  <meta name="keywords" content="desarrollador, laravel, javascript, portafolio, Bolivia" />
+  <meta name="author" content="Leonardo Limachi" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">Leonardo Limachi</div>
+
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#acercade">Acerca de</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#apis">APIs</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section id="inicio">
+  <div class="container person">
+
+    <div class="person-content">
+      <span class="person-badge">Disponible para proyectos</span>
+
+      <h1>Hola, soy <br><strong>Leonardo Limachi</strong></h1>
+
+      <p>
+        Desarrollador web con experiencia en Laravel, JavaScript y bases de datos.
+        Me enfoco en crear soluciones modernas y funcionales.
+      </p>
+
+      <div class="actions">
+        <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+        <a href="#contacto" class="btn btn--secondary">Contáctame</a>
+      </div>
+    </div>
+
+    <div class="person-img">
+      <div class="float-card card--a">Laravel</div>
+      <div class="float-card card--b">JavaScript</div>
+      <div class="float-card card--c">MySQL</div>
+
+      <div class="avatar">
+        <div class="avatar-interior">LL</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="acercade">
+  <div class="container about">
+    <h2 class="section-title">Acerca de mí</h2>
+
+    <p>
+      Soy estudiante y desarrollador web con conocimientos en backend y frontend.
+      He desarrollado proyectos como ecommerce en Laravel, sistemas con roles,
+      manejo de archivos, APIs y diseño responsivo.
+    </p>
+
+    <div class="skill-grid">
+
+      <div class="skill-card skill--backend">
+        <h3>Backend</h3>
+        <ul>
+          <li>Laravel</li>
+          <li>PHP</li>
+          <li>Node.js básico</li>
+        </ul>
+      </div>
+
+      <div class="skill-card skill--frontend">
+        <h3>Frontend</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+
+      <div class="skill-card skill--database">
+        <h3>Base de Datos</h3>
+        <ul>
+          <li>MySQL</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="proyectos">
+  <div class="container">
+
+    <h2 class="section-title">Mis Proyectos</h2>
+
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="frontend">Frontend</button>
+      <button class="filter-btn" data-filter="backend">Backend</button>
+      <button class="filter-btn" data-filter="fullstack">Fullstack</button>
+    </div>
+
+    <div id="projects-grid" class="projects-grid"></div>
+
+  </div>
+</section>
+
+<section id="apis">
+  <div class="container">
+
+    <h2 class="section-title">APIs en Vivo</h2>
+
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-img">⚡</div>
+        <div class="project-info">
+          <h3>PokeAPI</h3>
+          <p>Consumo de API con Promise.all para múltiples peticiones.</p>
+          <div id="poke-grid"></div>
+          <button id="poke-next" class="btn btn--secondary">Cargar más</button>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img">🌍</div>
+        <div class="project-info">
+          <h3>Buscar País</h3>
+          <input type="text" id="country-search" placeholder="Buscar país..." />
+          <div id="country-result"></div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="contacto" aria-label="Contacto">
+    <div class="container">
+      <header class="section-header">
+        <h2>Contáctame</h2>
+        <p>¿Tienes un proyecto en mente? Hablemos.</p>
+      </header>
+  
+      <div class="contact-layout">
+  
+        <aside class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <div>
+              <strong>Email</strong>
+              <p>leonardo@ejemplo.com</p>
+            </div>
+          </div>
+  
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <strong>Ubicación</strong>
+              <p>La Paz, Bolivia</p>
+            </div>
+          </div>
+  
+          <div class="contact-item">
+            <span class="contact-icon">⏱️</span>
+            <div>
+              <strong>Respuesta</strong>
+              <p>Menos de 48 horas</p>
+            </div>
+          </div>
+        </aside>
+  
+        <div class="contact-form">
+          <form id="contact-form" novalidate>
+  
+            <div class="form-group">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" required minlength="3"
+                placeholder="Tu nombre completo" />
+            </div>
+  
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" required
+                placeholder="tú@ejemplo.com" />
+            </div>
+  
+            <div class="form-group">
+              <label for="fecha">Fecha preferida</label>
+              <input type="date" id="fecha" name="fecha" />
+            </div>
+  
+            <div class="form-group">
+              <label for="presupuesto">
+                Presupuesto:
+                <span id="presupuesto-val">$500</span>
+              </label>
+              <input type="range" id="presupuesto" name="presupuesto"
+                min="100" max="5000" step="100" value="500" />
+            </div>
+  
+            <div class="form-group">
+              <label for="servicio">Servicio</label>
+              <input type="search" id="servicio" list="servicios-list"
+                placeholder="Busca un servicio..." />
+              <datalist id="servicios-list">
+                <option value="Full Stack">
+                <option value="Backend">
+                <option value="Frontend">
+                <option value="Base de Datos">
+              </datalist>
+            </div>
+  
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="4"
+                required minlength="20"
+                placeholder="Cuéntame sobre tu proyecto..."></textarea>
+            </div>
+  
+            <button type="submit" class="btn-submit">
+              Enviar mensaje →
+            </button>
+  
+          </form>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer-grid">
+
+    <div class="footer-brand">
+      <span class="logo">Leonardo Limachi</span>
+      <p>Desarrollador Web · Bolivia</p>
+    </div>
+
+    <div class="social-links">
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+    </div>
+
+  </div>
+
+  <p class="footer-copy">© 2026 Leonardo Limachi</p>
+</footer>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script>
+      const range = document.getElementById('presupuesto');
+      const val   = document.getElementById('presupuesto-val');
+      if (range && val) {
+        range.addEventListener('input', () => {
+          val.textContent = '$' + Number(range.value).toLocaleString();
+        });
+      }
+    </script>
+<!-- JS -->
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
