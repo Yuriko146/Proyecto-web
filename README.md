@@ -1,8 +1,2 @@
-# Proyecto-web
-Para volver a abrir el proyecto la próxima vez:
-Abre una terminal :
-taskflow-backend
-npm run dev
-Abre otra terminal :
-taskflow-frontend
-npm run dev
+# https://github.com/Yuriko146/backend.git
+# https://github.com/Yuriko146/frontend.git
